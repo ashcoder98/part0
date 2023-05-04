@@ -40,7 +40,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: User opens SPA, requesting the page.
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
     server-->>browser: Server sends back JavaScript along with intial data to render HTML and CSS
     deactivate server
