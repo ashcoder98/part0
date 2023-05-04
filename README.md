@@ -33,3 +33,24 @@ sequenceDiagram
     server-->>browser: JSON data
     deactivate server
 ```
+
+#Exercise 0.5
+```mermaid
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: User opens SPA, requesting the page.
+    activate server
+    server-->>browser: Server sends back JavaScript to render HTML and CSS
+    deactivate server
+
+    browser->>browser: JavaScript Renders HTML and CSS
+
+   
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: JSON data
+    deactivate server
+```
